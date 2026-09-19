@@ -166,7 +166,7 @@ a { color: inherit; }
   .marca-texto { font-size: 1.05rem; }
 }
 .marca-texto span {
-  display: block; font-family: Karla, sans-serif; font-size: .6rem;
+  display: block; font-family: Karla, sans-serif; font-size: .6rem; white-space: nowrap;
   letter-spacing: .2em; text-transform: uppercase; color: var(--texto-suave); font-weight: 600;
 }
 .nav-links { display: flex; gap: 1.7rem; }
@@ -566,9 +566,8 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
       <a href="#gala">Gala</a>
     </div>
     <div class="nav-acciones">
-      <!-- Abre el sistema de cuotas (copia del de Rítmica). En local corre en el puerto 5175;
-           al publicarlo hay que cambiar esta dirección por la de Render. -->
-      <a class="btn btn-linea btn-acceso" href="#" onclick="alert('El acceso al sistema de la escuela se habilita cuando esté online.');return false;" target="_blank" rel="noopener"
+      <!-- Acceso al sistema de cuotas de la escuela (mismo servidor, ruta /login). -->
+      <a class="btn btn-linea btn-acceso" href="https://patin-fa.onrender.com/login" rel="noopener"
          title="Sistema de cuotas de la escuela" aria-label="Acceso escuela">🔒<span class="txt-acceso"> Acceso escuela</span></a>
       <a class="btn btn-lleno" href="#sedes">Probá una clase</a>
     </div>
