@@ -340,6 +340,8 @@ a { color: inherit; }
 .caja h3 { font-size: 1.7rem; }
 .caja p { font-size: .93rem; color: var(--texto-suave); }
 .caja-ancha { grid-column: span 2; }
+@media (max-width: 520px) { .caja-ancha { grid-column: auto; } }
+html { overflow-x: clip; }
 .caja-violeta {
   background: var(--acento); border-color: transparent; color: var(--sobre-acento);
 }
